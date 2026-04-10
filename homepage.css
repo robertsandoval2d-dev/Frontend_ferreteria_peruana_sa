@@ -1,0 +1,9 @@
+:root{/*declaración de variables globales*/
+    --primary-color: #0a1723;
+    --secondary-color: #f16359;
+    --background-color:#f0f0f0;
+    --header-primary-color:#032f3b;
+    --header-secondary-color:#094854;
+    --footer-color: #7f3744;
+    --white: #ffffff;
+}
