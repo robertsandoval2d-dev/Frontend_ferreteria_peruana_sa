@@ -6,11 +6,258 @@
     --header-secondary-color:#094854;
     --footer-color: #7f3744;
     --white: #ffffff;
+    --button-primary-color: #b84642;
+    --button-secondary-color: #DF5551;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body{
     margin: 0;
 }
+
+/* === HEADER === */
+
+header{
+    background-color: var(--header-primary-color);
+    color: var(--white);
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+    padding: 0 2rem;
+    font-size: 19px;
+
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo-empresa{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-empresa img{
+    display: flex;
+    width: 80px;
+    height: auto;
+}
+
+/* === NAVEGACIÓN === */
+
+.homepage-secciones{
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-secciones > ul{
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    gap: 5.5rem;
+    width: 100%;
+}
+
+.homepage-secciones > ul > li{
+    position: relative;
+}
+
+.homepage-secciones a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* SUBMENU Productos */
+
+.homepage-secciones > ul > li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+
+    width: 25rem;
+    height: 16rem;
+    border-radius: 0 0px 10px 10px;
+
+    background-color: var(--button-secondary-color);
+    color: var(--white);
+    padding: 0.7rem 1rem;
+    
+}
+
+.categoria-titulo{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.submenu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.submenu li{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+}
+
+.submenu li:hover{
+    background-color: var(--button-primary-color);
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.submenu span{
+    font-size: 1rem;
+    font-family: cursive;
+    color: var(--white);
+    padding-left: 10px;
+}
+
+/* BOTÓN DE LOGEO */
+
+.boton-logeo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-logeo a{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.4s ease;
+}
+
+.boton-logeo a:hover{
+    background-color: var(--button-secondary-color);
+    transition: background-color 0.4s ease;
+}
+
+/* === BARRA DE BÚSQUEDA === */
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: var(--header-secondary-color);
+    height: 2.5rem;
+    width: 100%;
+}
+
+.barra-busqueda{
+    display: flex;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 0.5px solid var(--primary-color);
+    padding: 3px 4px 3px 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.barra-busqueda input{
+    flex: 1;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+}
+/* 
+.barra-boton{
+
+} */
+
+.barra-busqueda button{
+    background: none;
+    border: none;
+}
+
+.barra-busqueda button:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+/* === BANNER === */
+
+.banner-principal{
+    background-color: var(--background-color);
+    width: 100%;
+    max-height: 50rem;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider ul{
+    display: flex;;
+    align-items: center;
+    list-style: none; 
+}
+
+.slider img{
+    display: none;
+    width: 50rem;
+    height: 450px;
+}
+
+.slider img.active{
+    display: block;
+}
+
+.slider button{
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: auto 20px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--button-primary-color);
+    color: var(--white);
+    
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
+}
+
+.slider button:hover{
+    cursor: pointer;
+    background-color: var(--button-secondary-color);
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === PRODUCTOS DESTACADOS === */
 
 .productos-destacados{
     background-color: var(--background-color);

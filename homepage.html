@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,70 @@
 </head>
 <body>
     <header>
+        <div class="header-container">
+            <div class="logo-empresa">
+                <a href="homepage.html">
+                    <img src="images/logo_promart.jpg" alt="logo-ferreteria">
+                </a>
+            </div>
+            <nav class="homepage-secciones">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <div class="submenu">
+                            <div class="categoria-titulo">Categorías de los Productos</div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="categoria-producto">Herramientas manuales</a>
+                                    <span>Martillos, destornilladores, alicates</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="categoria-producto">Herramientas eléctricas</a>
+                                    <span>Taladros, sierras, lijadoras</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="categoria-producto">Materiales de construcción</a>
+                                    <span>Ladrillos, bloques, vigas</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="categoria-producto">Pinturas y accesorios</a>
+                                    <span>Pinturas, rodillos, brochas</span>
+                                </li>
+                            </ul>    
+                        </div>
+                    </li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="boton-logeo">
+                <a href="#">Iniciar Sesión</a>
+            </div>
+        </div>
+    </header>     
 
-    </header> 
+    <section class="busqueda">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Busca un producto">
+            <div class="barra-boton">
+                <button type="submit">🔍</button>
+            </div>  
+        </div>
+    </section>
+        
+    <section class="banner-principal">
+        <div class="slider">
+            <button onclick="changeImage(0)" aria-label="Anterior">&lt;</button>
+            <ul>
+                <li><img src="images/img-banner1.jpg" alt="imagen-main1" class=""></li>
+                <li><img src="images/img-banner2.jpg" alt="imagen-main2" class="active"></li>
+                <li><img src="images/img-banner3.jpg" alt="imagen-main3" class=""></li>
+                <li><img src="images/img-banner4.jpg" alt="imagen-main4" class=""></li>
+            </ul>
+            <button onclick="changeImage(1)" aria-label="Siguiente">&gt;</button>
+        </div>
+    </section>
     
     <section class="productos-destacados">
         <h2>Productos Destacados</h2>
