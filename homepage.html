@@ -49,11 +49,32 @@
     </section>
 
     <section class="contactanos">
+        <h2>Contáctanos</h2>
+        <div class="contenedor-contacto">           
+            <div class="contacto-img">
+                <img src="images/UBICACION.png" alt="ubicacion">
+            </div>
+            <div class="contacto-form">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
 
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" onclick="enviarDatos()">Enviar</button>
+            </div>
+        </div>
     </section>
-
+    
     <footer class="main-footer">
-
     </footer>
 </body>
 </html>
