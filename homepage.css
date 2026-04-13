@@ -284,11 +284,12 @@ header{
     flex-wrap: nowrap;
     gap: 60px;
     justify-content: center;
+    padding: 10px;
 }
 
 .card{
     display:flex;
-    background-color: var(--white);
+    background-color: var(--header-secondary-color);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -320,15 +321,17 @@ header{
 .card-info h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--background-color);
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 .card-info p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.95rem;
-    color: #443f3f;
+    color: var(--white);
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 /* === SECCIÓN PROVEEDORES === */
@@ -371,7 +374,7 @@ header{
 .contenedor-contacto {
     display: flex;
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
 }
